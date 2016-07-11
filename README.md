@@ -5,7 +5,7 @@ Use system app update
 
   
 为了使代码结构清晰，降低耦合，主要实现代码在独立模块systemupdate中实现，MainActivity只实现传值的初始化工作。  
-   
-[id]:
 
-![ABC](http://www.baidu.com/img/bdlogo.gif) 
+[id]http://android-doc.com/reference/android/app/DownloadManager.html/"Optional Title Here"
+
+![update](https://github.com/EastLakeLegends/Update/update.png) 
