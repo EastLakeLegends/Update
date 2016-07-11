@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SystemUpdater</string>
+    <string name="updater_download_cancle">取消下載</string>
+    <string name="updater_download_error">下載出錯,點擊重試</string>
+    <string name="updater_download_httpiserror">資源不存在</string>
+    <string name="updater_download_restart">點擊重試</string>
+
+    <!--升级说明-->
+    <string name="sys_updater_version_name">【版本名稱】</string>
+    <string name="sys_updater_version_descripty">【版本說明】</string>
+    <string name="sys_updater_version_btn_no">以後再說</string>
+    <string name="sys_updater_version_btn_ok">現在更新</string>
+    <string name="sys_updater_version_ignore">此版本不再提示</string>
+    <string name="sys_updater_version_findnew">發現新版本</string>
+
+    <!--升级中-->
+    <string name="sys_updater_loading">連接中...</string>
+    <string name="sys_updater_pause">已暫停</string>
+    <string name="sys_updater_downloading">新版本下載中</string>
+
+
+    <!--下载-->
+    <string name="sys_updater_nosdcard">沒有檢測到sdcard</string>
+
+
+    <string name="sys_updater_version_check">新版本檢查中...</string>
+    <string name="sys_updater_no_update">當前已是最新版本</string>
+    <string name="sys_updater_no_wifi">沒有wifi連接， 只在wifi下更新</string>
+    <string name="sys_update_version">當前版本已過期，必須升級才能使用.</string>
+    <string name="sys_net_fail">網絡不給力</string>
+    <string name="sys_servers_fail">服務器開小差了</string>
+
+
+    <string name="sys_updater_net_error_tips">網絡不給力，點擊重試</string>
+    <string name="sys_updater_server_error_tips">服務器開小差，點擊重試</string>
+</resources>

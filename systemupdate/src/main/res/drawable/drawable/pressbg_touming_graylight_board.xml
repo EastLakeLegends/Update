@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下状态 -->
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="3dp" />
+            <solid android:color="@color/updater_line_color" />
+            <stroke android:width="@dimen/updater_line_height" android:color="@color/updater_line_color" />
+        </shape>
+    </item>
+    <!-- 普通状态 -->
+    <item>
+        <shape>
+            <corners android:radius="3dp" />
+            <solid android:color="@color/updater_transparent" />
+            <stroke android:width="@dimen/updater_line_height" android:color="@color/updater_line_color" />
+        </shape>
+    </item>
+</selector>

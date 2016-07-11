@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="updater_white">#ffffff</color>
+    <color name="updater_blue">#00baf1</color><!-- 全局主题蓝  -->
+    <color name="updater_line_color_light">#efefef</color><!-- 背景内部线条 -->
+    <color name="updater_line_color">#e1e1e1</color>	<!-- 布局下面线条 -->
+
+    <color name="updater_transparent">#00000000</color>	<!-- 布局下面线条 -->
+
+
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorAccent">#FF5722</color>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="@dimen/updater_width"
+        android:layout_height="@dimen/updater_height_2"
+        android:background="@drawable/bg_white_circle"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_top"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="27dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_download" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_top"
+            android:layout_marginTop="14dip"
+            android:gravity="center"
+            android:text="@string/sys_updater_version_findnew"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:visibility="gone"
+                android:background="@drawable/pressbg_touming_graylight_board"
+                android:text="@string/sys_updater_version_btn_no" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="@drawable/pressbg_orange_orangedark_board"
+                android:text="@string/sys_updater_version_btn_ok" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            style="@style/custom_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@id/layout_btn"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:textSize="12sp"
+            android:paddingLeft="5dp"
+            android:text="@string/sys_updater_version_ignore"
+            android:textColor="#999999" />
+
+        <TextView
+            android:id="@+id/tv_msm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/checkBox"
+            android:layout_below="@id/tv_title"
+            android:layout_margin="25dp"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#777777"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

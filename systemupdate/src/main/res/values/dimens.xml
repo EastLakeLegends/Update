@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="updater_width">284dp</dimen>
+    <dimen name="updater_height">366dp</dimen>
+    <dimen name="updater_height_2">348dp</dimen>
+    <dimen name="updater_line_height">0.8dp</dimen>
+</resources>
