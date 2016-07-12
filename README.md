@@ -8,9 +8,11 @@ Use system app update
 #Maven库 
 
 
-maven {
-        url 'http://localhost:8081/nexus/content/repositories/SystemUpdate/'
-       }
+maven
+ 
+{
+        url 'http://10.99.13.20:8081/nexus/content/repositories/SystemUpdate/'
+ }
         
 compile 'com.cnhubei.update:systemupdate:1.0.1'
 
@@ -21,14 +23,16 @@ compile 'com.cnhubei.update:systemupdate:1.0.1'
 
 ![update](https://github.com/EastLakeLegends/Update/blob/master/update3.png) 
 
-MainActivity中初始化代码
+#MainActivity中初始化代码
 
 VersionBean bean = new VersionBean("8.9.9","http://10.99.101.4/1616v3.0.2xin.apk ", "app测试2", 0, 90000000);
 bean.setCheckUpdater(false);
 VersionManager.VersionCheck(MainActivity.this, bean);
 
-主要使用了DownloadManager
-http://android-doc.com/reference/android/app/DownloadManager.html
+#主要使用了DownloadManager
+
+DownloadManager API:http://android-doc.com/reference/android/app/DownloadManager.html
+
 
 DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
         //设置在什么网络情况下进行下载
@@ -38,7 +42,6 @@ DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
         request.setTitle("动向新闻海外版下载");
         request.setMimeType("application/vnd.android.package-archive");
         request.setAllowedOverRoaming(false);
-
         saveSimpleCacheObject(url);
         String path = Environment.DIRECTORY_DOWNLOADS;
         String app = url.substring(url.lastIndexOf("/") + 1);
