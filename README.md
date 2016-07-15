@@ -5,22 +5,17 @@ Use system app update
   
 为了使代码结构清晰，降低耦合，主要实现代码在独立模块systemupdate中实现，MainActivity只实现传值的初始化工作。 
 
-#Maven库 
+#Maven库引用 
+compile 'com.cnhubei.systemupdate:systemupdate:1.0.0'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.cnhubei.systemupdate:systemupdate:1.0.0'
+} 
 
 
-maven
- 
-{
-        url 'http://10.99.13.20:8081/nexus/content/repositories/SystemUpdate/'
- }
-        
-compile 'com.cnhubei.update:systemupdate:1.0.1'
-
-
-![update](https://github.com/EastLakeLegends/Update/blob/master/update1.png) 
-
-![update](https://github.com/EastLakeLegends/Update/blob/master/update2.png) 
-
+![update](https://github.com/EastLakeLegends/Update/blob/master/update1.png)   ![update](https://github.com/EastLakeLegends/Update/blob/master/update2.png) 
 ![update](https://github.com/EastLakeLegends/Update/blob/master/update3.png) 
 
 #MainActivity中初始化代码
