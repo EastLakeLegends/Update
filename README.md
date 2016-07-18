@@ -10,7 +10,6 @@ compile 'com.cnhubei.systemupdate:systemupdate:1.0.0'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
     compile 'com.cnhubei.systemupdate:systemupdate:1.0.0'
 } 
 
